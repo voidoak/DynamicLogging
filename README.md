@@ -43,7 +43,7 @@ The file is structured as follows:
 }
 ```
 
-##~~ example usecase ~~
+## Usage
 
 Below we have my `on_message_delete` listener:
 ```py
@@ -72,7 +72,9 @@ And here is how I have set up the `on_message_delete` format:
     "footer": "Message ID: {id} | Channel: {channel}"
   }
 ```
-Now, here is an example message in the test server:
+
+## Example
+Here is an example message in the test server:
 
 ![message](https://media.discordapp.net/attachments/789533464235212861/789690244743168011/unknown.png "boy I sure hope the mods don't see this lmao")
 
@@ -82,3 +84,9 @@ And now we shall log the deletion event, and the message contents:
 
 ## Dependencies
 
+```
+pip install discord.py
+pip install decorator
+```
+
+And that's it! Enjoy logging the hell out of your server mwahahaha
