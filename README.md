@@ -1,4 +1,4 @@
-#Better Logging.
+# Better Logging.
 
 Using decorators and simple `json` data we can dynamically and programmatically improve event logging with your Discord bot. It works as follows:
 
