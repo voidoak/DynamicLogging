@@ -24,7 +24,7 @@ async def on_given_event(self, args):
 Once the event listener you have defined is triggered, `log_event` will take the event type and the data you returned and attempt to format an embed using that data, according to the formats listed in `logging/log_formats.json`. You must make sure to return all data you require inside that format or you will raise a `KeyError`. 
 
 Formatting properly is as follows (`logging/log_formats.json`):
-```json
+```js
 {
 	"event_type": {
 		"title": "{title}",
@@ -37,7 +37,7 @@ Optional fields can be any additional data you would want represented in your em
 If all goes well and the returned event data was formatted in sync with the respective format, `log_event` will generate an embed and attempt to send it in the proper logging channel; this data is stored in `logging/log_config.json`. If none is found, it will simply not log it. For a given event, it will store a channel snowflake ID, to be used later.
 
 The file is structured as follows:
-```json
+```js
 {
 	"on_message_delete": 1234567890  // sample event/channel ID
 }
@@ -73,9 +73,11 @@ And here is how I have set up the `on_message_delete` format:
   }
 ```
 Now, here is an example message in the test server:
+
 ![message](https://media.discordapp.net/attachments/789533464235212861/789690244743168011/unknown.png "boy I sure hope the mods don't see this lmao")
 
 And now we shall log the deletion event, and the message contents:
+
 ![message](https://media.discordapp.net/attachments/789533464235212861/789693814771417088/unknown.png "logged message")
 
 ## Dependencies
