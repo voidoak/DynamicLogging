@@ -7,10 +7,13 @@ Using decorators and simple `json` data we can dynamically and programmatically 
 @commands.Cog.listener()
 async def on_given_event(self, args):
 		if predicate:
-				""" where predicate is a disallowed circumstance in which you do not want logging to occur; this will return None, allowing the log_event to exit without logging. """
+				""" where predicate is a disallowed circumstance in which
+				you do not want logging to occur; this will return None,
+				allowing the log_event to exit without logging. """
 				return
 
-		""" perform any necessary logic on these data as you pass them to the data dict, as no preferential logic should be performed later in the log_event function. """
+		""" perform any necessary logic on these data as you pass them to the data dict,
+		as no preferential logic should be performed later in the log_event function. """
 		data = {
 				"title": args.monty,
 				"description": utils.my_function(args.foobar),
