@@ -15,9 +15,9 @@ async def on_given_event(self, args):
 	""" perform any necessary logic on these data as you pass them to the data dict,
 	as no preferential logic should be performed later in the log_event function. """
 	data = {
-			"title": args.monty,
-			"description": utils.my_function(args.foobar),
-			"spam": args.eggs
+		"title": args.monty,
+		"description": utils.my_function(args.foobar),
+		"spam": args.eggs
 	}
 
 	return data
