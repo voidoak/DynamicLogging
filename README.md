@@ -21,7 +21,8 @@ async def on_given_event(self, args):
 	)
 	
 	message = f"{args.foobar} activated {args.spam} event!"
-	# return (in a dict) whichever objects are attributes of the discord.Message object, so that it will send it as the log message.
+	# return (in a dict) whichever objects are attributes of the discord.Message object,
+	# so that it will send it as the log message.
 	return { "message": message, "embed": embed }
 		
 ```
