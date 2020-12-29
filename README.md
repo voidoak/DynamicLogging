@@ -54,7 +54,10 @@ async def on_message_delete(self, message):
 		footer = f"Message ID: {message.id} | Channel: {message.channel}"
 	)
 	
-	embed.set_author(name=f"{author.name}#{author.discriminator} ({author.id})", icon_url=author.avatar_url)
+	embed.set_author(
+		name=f"{author.name}#{author.discriminator} ({author.id})",
+		icon_url=author.avatar_url
+	)
 
     return { "embed": embed }
 ```
