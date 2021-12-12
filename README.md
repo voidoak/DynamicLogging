@@ -17,7 +17,7 @@ async def on_given_event(self, args):
 
 	embed = discord.Embed(
 		title=args.monty,
-		description: utils.my_function(args.foobar)
+		description=utils.my_function(args.foobar)
 	)
 	
 	message = f"{args.foobar} activated {args.spam} event!"
@@ -49,9 +49,9 @@ async def on_message_delete(self, message):
 	author = message.author
 	
 	embed = discord.Embed(
-		title = "Message Deleted",
-		description= message.content
-		footer = f"Message ID: {message.id} | Channel: {message.channel}"
+		title="Message Deleted",
+		description=message.content
+		footer=f"Message ID: {message.id} | Channel: {message.channel}"
 	)
 	
 	embed.set_author(
